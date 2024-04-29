@@ -459,8 +459,8 @@ export async function participantsUpdate({ id, participants, action }) {
                 let groupMetadata = await this.groupMetadata(id) || (conn.chats[id] || {}).metadata
                 for (let user of participants) {
                 	let nickgc = await conn.getName(id) 
-                    let pp = 'https://telegra.ph/file/24fa902ead26340f3df2c.png'
-                    let ppgc = 'https://telegra.ph/file/24fa902ead26340f3df2c.png'
+                    let pp = 'https://telegra.ph/file/af6032e56560aec8bf6ca.jpg'
+                    let ppgc = 'https://telegra.ph/file/af6032e56560aec8bf6ca.jpg'
                     try {
                         pp = await this.profilePictureUrl(user, 'image')
                         ppgc = await this.profilePictureUrl(id, 'image') 
@@ -473,9 +473,9 @@ export async function participantsUpdate({ id, participants, action }) {
                      
                        this.sendMessage(id, {text: text, thumbnail: await( await this.getFile(pp)).data , contextInfo:{ mentionedJid: [user] , externalAdReply: { showAdAttribution: true,
 mediaType:  2,
-mediaUrl: 'https://www.instagram.com/p/Cch2IoGFomX/?utm_source=ig_web_copy_link',
+mediaUrl: 'https://www.instagram.com/itz_umar_719/',
 title: '「 ɢ ʀ ᴏ ᴜ ᴘ  ɴ ᴏ ᴛ ɪ ғ ɪ ᴄ ᴀ ᴛ ɪ ᴏ ɴ s 」',
-body: '🍂 ᴇ ʟ ᴀ ɪ ɴ ᴀ  ᴍ ᴜ ʟ ᴛ ɪ ᴅ ᴇ ᴠ ɪ ᴄ ᴇ 🍂',
+body: '😻 U D   A I   B O T 😻',
 sourceUrl: 'https://www.instagram.com/p/Cch2IoGFomX/?utm_source=ig_web_copy_link', thumbnail: await( await this.getFile(pp)).data
   }
  }})
@@ -539,11 +539,11 @@ export async function deleteUpdate(message) {
         if (chat.delete)
             return 
             this.reply(msg.chat, `
-Terdeteksi @${participant.split`@`[0]} telah menghapus pesan. 
-Untuk mematikan fitur ini, ketik
+Detected @${participant.split`@`[0]} has deleted the message. 
+To turn off this feature, type
 *.enable delete*
           
-Untuk menghapus pesan yang dikirim oleh Bot, reply pesan dengan perintah
+To delete messages sent by Bots, reply to the message with the command
 *.delete*`, msg)
         this.copyNForward(msg.chat, msg).catch(e => console.log(e, msg))
     } catch (e) {
