@@ -24,7 +24,7 @@
 - ✔️ | AntiCall
 - ✔️ | Nsfw 
 - ✔️ | Sticker 
-- ✔️ | Kerang Ajaib 
+- ✔️ | Magic Shell
 - ✔️ | Quotes
 - ✔️ | Anime 
 - ✔️ | Premium 
