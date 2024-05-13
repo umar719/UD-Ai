@@ -36,7 +36,7 @@ global.sblog = 'https://udmods719.blogspot.com/' //blogspot
 
 /*============== PAYMENT ==============*/
 global.peasypaisa = '03470555988' //easypaisa
-global.pbinnaceid = 740501188' //biinanceuid
+global.ppulsa = '083817914073' //pulsa2
 global.povo = '740501188' //ovo
 global.gopay = '740501188' //gopay
 global.dana = '7405011880' //dana
